@@ -2,7 +2,7 @@
 
 Network ACL for the VPC
 
-##Usage
+## Usage
 
 ```
 resource "aws_network_acl" "main" {
@@ -32,7 +32,7 @@ resource "aws_network_acl" "main" {
 }
 ```
 
-##Variables
+## Variables
 
 * vpc_id - (Required) The ID of the associated VPC.
 * subnet_ids - (Optional) A list of Subnet IDs to apply the ACL to
@@ -49,7 +49,7 @@ Both egress and ingress support the following keys:
 * protocol - (Required) The protocol to match. If using the -1 'all' protocol, you must specify a from and to port of 0.
 * cidr_block - (Optional) The CIDR block to match. This must be a valid network mask.
 
-##Outputs
+## Outputs
 
 * id - The ID of the network ACL
 * arn - The ARN of the network ACL
